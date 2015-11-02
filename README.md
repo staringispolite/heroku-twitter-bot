@@ -12,8 +12,8 @@ https://www.twitter.com
 ## Register a Twitter app
 * https://apps.twitter.com/
 * Create a new app
-* In the top level of the repo, type `chatterbot-register` and follow the directions on-screen to OAuth the bot to your app.
-* Note the token and secret it generates
+* In the top level of the new bot repo, type `chatterbot-register` and follow the directions on-screen to OAuth the bot to your app. Make sure when you follow the OAuth link in your browser to authorize the bot, you load that page as the bot user.
+* Note the token and secret Twitter generates. It should be in the output from `chatterbot-register`
 
 ## Your actual app logic
 * Rename the .rb and .yml files to your app name
