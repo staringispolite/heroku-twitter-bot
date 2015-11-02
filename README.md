@@ -6,7 +6,10 @@ Dead-simple wrapper to get chatterbot running in Heroku in as little as 5 minute
 https://www.twitter.com
 
 ## Register a Twitter app
-https://apps.twitter.com/
+* https://apps.twitter.com/
+* Create a new app
+* Go to the "Keys and Access Tokens" tab
+* Create a new Access Token
 
 ## Fork this repository
 * Click the Fork button here https://github.com/staringispolite/heroku-twitter-bot
