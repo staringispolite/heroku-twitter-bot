@@ -14,6 +14,7 @@ https://www.twitter.com
 * Enter the into to create a new app
 * In the top level of the new bot repo, type `chatterbot-register` and follow the directions on-screen to OAuth the bot to your app. Make sure when you follow the OAuth link in your browser to authorize the bot, you load that page as the bot user. You'll get a pin to type back into the command line to complete the auth.
 * Note the token and secret Twitter generates. It should be in the output from `chatterbot-register`.
+* If you have trouble at this step, see Chatterbot's instructions here: http://muffinista.github.io/chatterbot/setup.html
 
 ## Make your heroku app
 * `heroku create yourbotname`
@@ -21,13 +22,14 @@ https://www.twitter.com
 
 ## Your actual app logic
 * Rename the .rb and .yml files to your app name if need be
-* Edit the .yml file with the corresponding values for the Twitter app you registered & the OAuth token you just generated
+* Examples of what you can do with Chatterbot: http://muffinista.github.io/chatterbot/examples.html
 
 ## Test changes locally
 Probably with debug_mode and/or no_update on.
 
 ## Run live on Heroku
-* In your Heroku dashboard, add config vars for `CONSUMER_KEY`, `CONSUMER_SECRET`, `TOKEN`, `SECRET`, and set `ENV` = `PRODUCTION`
+* Change the line in `Procfile` to match your bot's `.rb` file
+* In your Heroku dashboard, add config vars for `CONSUMER_KEY`, `CONSUMER_SECRET`, `TOKEN`, `SECRET`, and set `ENV` = `PRODUCTION` (Ignore this for now - not working on ENV vars yet)
 * `git push heroku master`
 * In your Heroku dashboard, turn the worker process on.
 
