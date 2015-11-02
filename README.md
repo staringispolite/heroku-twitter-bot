@@ -2,18 +2,18 @@
 Dead-simple wrapper to get chatterbot running in Heroku in as little as 5 minutes
 
 # Your Twitter bot live on Heroku in 5 minutes
+## Fork this repository
+* Click the Fork button here https://github.com/staringispolite/heroku-twitter-bot
+* git clone to your local machine
+
 ## Make a Twitter account for your bot
 https://www.twitter.com
 
 ## Register a Twitter app
 * https://apps.twitter.com/
 * Create a new app
-* Go to the "Keys and Access Tokens" tab
-* Create a new Access Token
-
-## Fork this repository
-* Click the Fork button here https://github.com/staringispolite/heroku-twitter-bot
-* git clone to your local machine
+* In the top level of the repo, type `chatterbot-register` and follow the directions on-screen to OAuth the bot to your app.
+* Note the token and secret it generates
 
 ## Your actual app logic
 * Rename the .rb and .yml files to your app name
