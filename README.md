@@ -16,22 +16,20 @@ https://www.twitter.com
 * Note the token and secret Twitter generates. It should be in the output from `chatterbot-register`.
 
 ## Make your heroku app
-* > heroku create yourbotname
-* Add heroku config
-* Set local ENV to DEVELOPMENT
+* `heroku create yourbotname`
+* `heroku plugins:install git://github.com/ddollar/heroku-config.git`
 
 ## Your actual app logic
-* Rename the .rb and .yml files to your app name
+* Rename the .rb and .yml files to your app name if need be
 * Edit the .yml file with the corresponding values for the Twitter app you registered & the OAuth token you just generated
 
 ## Test changes locally
 Probably with debug_mode and/or no_update on.
 
 ## Run live on Heroku
-* set up ENV variables in Heroku
-* push to heroku
-* run free dyno
-
-
+* In your Heroku dashboard, add config vars for `CONSUMER_KEY`, `CONSUMER_SECRET`, `TOKEN`, `SECRET`, and set `ENV` = `PRODUCTION`
+* `git push heroku master`
+* In your Heroku dashboard, turn the worker process on.
 
 ## That's it!
+* `heroku logs -t` to see what it's doing
