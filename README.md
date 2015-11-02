@@ -17,6 +17,7 @@ https://www.twitter.com
 * If you have trouble at this step, see Chatterbot's instructions here: http://muffinista.github.io/chatterbot/setup.html
 
 ## Make your heroku app
+* Assumes you've already installed Heroku Toolbelt CLI: https://toolbelt.heroku.com/
 * `heroku create yourbotname`
 * `heroku plugins:install git://github.com/ddollar/heroku-config.git`
 
