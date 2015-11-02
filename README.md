@@ -1,5 +1,5 @@
 # heroku-twitter-bot
-Dead-simple wrapper to get chatterbot running in Heroku in as little as 5 minutes
+Dead-simple wrapper to get Chatterbot running in Heroku in as little as 5 minutes
 
 # Your Twitter bot live on Heroku in 5 minutes
 ## Fork this repository
@@ -26,7 +26,7 @@ https://www.twitter.com
 * Examples of what you can do with Chatterbot: http://muffinista.github.io/chatterbot/examples.html
 
 ## Test changes locally
-Probably with debug_mode and/or no_update on.
+Probably with `debug_mode` and/or `no_update` on.
 
 ## Run live on Heroku
 * Change the line in `Procfile` to match your bot's `.rb` file
