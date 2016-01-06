@@ -12,6 +12,7 @@ https://www.twitter.com
 ## Register a Twitter app & bot auth token
 * https://apps.twitter.com/
 * Enter the into to create a new app
+* Run `bundle install` to install dependencies
 * In the top level of the new bot repo, type `chatterbot-register` and follow the directions on-screen to OAuth the bot to your app. Make sure when you follow the OAuth link in your browser to authorize the bot, you load that page as the bot user. You'll get a pin to type back into the command line to complete the auth.
 * Note the token and secret Twitter generates. It should be in the output from `chatterbot-register`.
 * If you have trouble at this step, see Chatterbot's instructions here: http://muffinista.github.io/chatterbot/setup.html
